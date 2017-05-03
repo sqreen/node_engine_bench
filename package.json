@@ -1,0 +1,24 @@
+{
+  "name": "node_engine_bench",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqreen/node_engine_bench.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sqreen/node_engine_bench/issues"
+  },
+  "homepage": "https://github.com/sqreen/node_engine_bench#readme",
+  "dependencies": {
+  }
+}
