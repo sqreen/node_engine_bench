@@ -1,0 +1,558 @@
+./tests/access-non-existent-arguments-index.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/access-non-existent-arguments-index.js 100000
+		 66.11763 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/access-non-existent-arguments-index.js 100000
+		 61.702865 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/access-non-existent-arguments-index.js 100000
+		 62.880877 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/access-non-existent-arguments-index.js 100000
+		 53.124369 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/access-non-existent-arguments-index.js 100000
+		 157.666988 ms
+./tests/access-valid-arguments-index.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/access-valid-arguments-index.js 100000
+		 56.617313 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/access-valid-arguments-index.js 100000
+		 52.673083 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/access-valid-arguments-index.js 100000
+		 65.008959 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/access-valid-arguments-index.js 100000
+		 49.347979 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/access-valid-arguments-index.js 100000
+		 64.197372 ms
+./tests/assign-to-arguments.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/assign-to-arguments.js 100000
+		 63.522941 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/assign-to-arguments.js 100000
+		 55.312976 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/assign-to-arguments.js 100000
+		 65.038289 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/assign-to-arguments.js 100000
+		 50.558376 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/assign-to-arguments.js 100000
+		 62.254893 ms
+./tests/async-await.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/async-await.js 100000
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/async-await.js 100000
+		 578.793028 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/async-await.js 100000
+		 664.750661 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/async-await.js 100000
+		 328.274365 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/async-await.js 100000
+		 6639.269466 ms
+./tests/bound-funtion.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/bound-funtion.js 100000
+		 54.792379 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/bound-funtion.js 100000
+		 52.390093 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/bound-funtion.js 100000
+		 56.808999 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/bound-funtion.js 100000
+		 47.785321 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/bound-funtion.js 100000
+		 60.732983 ms
+./tests/calls-bind.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/calls-bind.js 100000
+		 86.496869 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/calls-bind.js 100000
+		 59.028805 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/calls-bind.js 100000
+		 64.443514 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/calls-bind.js 100000
+		 53.611857 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/calls-bind.js 100000
+		 82.377191 ms
+./tests/closure-function.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/closure-function.js 100000
+		 52.08356 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/closure-function.js 100000
+		 51.834069 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/closure-function.js 100000
+		 57.445512 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/closure-function.js 100000
+		 48.739113 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/closure-function.js 100000
+		 58.752667 ms
+./tests/debugger.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/debugger.js 100000
+		 57.392401 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/debugger.js 100000
+		 50.004527 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/debugger.js 100000
+		 62.695751 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/debugger.js 100000
+		 47.121718 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/debugger.js 100000
+		 59.035866 ms
+./tests/eval.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/eval.js 100000
+		 70.335111 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/eval.js 100000
+		 67.824457 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/eval.js 100000
+		 75.566386 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/eval.js 100000
+		 78.415535 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/eval.js 100000
+		 198.882209 ms
+./tests/for-in-loop-using-array.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/for-in-loop-using-array.js 100000
+		 73.394631 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/for-in-loop-using-array.js 100000
+		 69.726805 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/for-in-loop-using-array.js 100000
+		 75.785937 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/for-in-loop-using-array.js 100000
+		 66.89084 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/for-in-loop-using-array.js 100000
+		 89.134884 ms
+./tests/for-in-loop-with-outer-scope-key.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/for-in-loop-with-outer-scope-key.js 100000
+		 58.915767 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/for-in-loop-with-outer-scope-key.js 100000
+		 55.289831 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/for-in-loop-with-outer-scope-key.js 100000
+		 59.239823 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/for-in-loop-with-outer-scope-key.js 100000
+		 52.785111 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/for-in-loop-with-outer-scope-key.js 100000
+		 60.444445 ms
+./tests/for-in-loop-without-simple-enumerable.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/for-in-loop-without-simple-enumerable.js 100000
+		 93.240191 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/for-in-loop-without-simple-enumerable.js 100000
+		 93.445928 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/for-in-loop-without-simple-enumerable.js 100000
+		 106.51479 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/for-in-loop-without-simple-enumerable.js 100000
+		 94.970661 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/for-in-loop-without-simple-enumerable.js 100000
+		 67.278664 ms
+./tests/for-in-loop.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/for-in-loop.js 100000
+		 54.719029 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/for-in-loop.js 100000
+		 54.857844 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/for-in-loop.js 100000
+		 61.415897 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/for-in-loop.js 100000
+		 49.717216 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/for-in-loop.js 100000
+		 63.300616 ms
+./tests/input-multiple-classes.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/input-multiple-classes.js 100000
+		 67.846043 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/input-multiple-classes.js 100000
+		 68.515859 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/input-multiple-classes.js 100000
+		 96.85029 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/input-multiple-classes.js 100000
+		 61.07432 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/input-multiple-classes.js 100000
+		 99.392519 ms
+./tests/input-multiple-shadow-class.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/input-multiple-shadow-class.js 100000
+		 65.276894 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/input-multiple-shadow-class.js 100000
+		 75.810109 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/input-multiple-shadow-class.js 100000
+		 149.883073 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/input-multiple-shadow-class.js 100000
+		 60.07236 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/input-multiple-shadow-class.js 100000
+		 67.389406 ms
+./tests/input-multiple-types.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/input-multiple-types.js 100000
+		 83.664323 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/input-multiple-types.js 100000
+		 79.742417 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/input-multiple-types.js 100000
+		 108.062417 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/input-multiple-types.js 100000
+		 79.137779 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/input-multiple-types.js 100000
+		 92.136418 ms
+./tests/leaks-arguments-via-closure.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/leaks-arguments-via-closure.js 100000
+		 59.713303 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/leaks-arguments-via-closure.js 100000
+		 60.653415 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/leaks-arguments-via-closure.js 100000
+		 66.99764 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/leaks-arguments-via-closure.js 100000
+		 56.757434 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/leaks-arguments-via-closure.js 100000
+		 176.947799 ms
+./tests/manually-copy-arguments.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/manually-copy-arguments.js 100000
+		 60.648777 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/manually-copy-arguments.js 100000
+		 58.329534 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/manually-copy-arguments.js 100000
+		 66.574488 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/manually-copy-arguments.js 100000
+		 53.961126 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/manually-copy-arguments.js 100000
+		 67.829339 ms
+./tests/nested-functions.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/nested-functions.js 100000
+		 61.226315 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/nested-functions.js 100000
+		 57.190417 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/nested-functions.js 100000
+		 78.433413 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/nested-functions.js 100000
+		 50.453083 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/nested-functions.js 100000
+		 72.855308 ms
+./tests/noop.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/noop.js 100000
+		 53.43189 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/noop.js 100000
+		 51.360795 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/noop.js 100000
+		 64.416472 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/noop.js 100000
+		 47.041275 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/noop.js 100000
+		 59.023441 ms
+./tests/object-literal-with-getter.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/object-literal-with-getter.js 100000
+		 114.487617 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/object-literal-with-getter.js 100000
+		 127.250204 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/object-literal-with-getter.js 100000
+		 143.789659 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/object-literal-with-getter.js 100000
+		 129.309595 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/object-literal-with-getter.js 100000
+		 158.258305 ms
+./tests/object-literal-with-setter.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/object-literal-with-setter.js 100000
+		 121.048582 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/object-literal-with-setter.js 100000
+		 126.953337 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/object-literal-with-setter.js 100000
+		 150.193854 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/object-literal-with-setter.js 100000
+		 125.024066 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/object-literal-with-setter.js 100000
+		 153.295497 ms
+./tests/overwrite-named-arg-and-reading-arguments.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/overwrite-named-arg-and-reading-arguments.js 100000
+		 54.904757 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/overwrite-named-arg-and-reading-arguments.js 100000
+		 53.165824 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/overwrite-named-arg-and-reading-arguments.js 100000
+		 60.903442 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/overwrite-named-arg-and-reading-arguments.js 100000
+		 47.597231 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/overwrite-named-arg-and-reading-arguments.js 100000
+		 60.733872 ms
+./tests/overwrite-named-arg.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/overwrite-named-arg.js 100000
+		 51.885951 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/overwrite-named-arg.js 100000
+		 52.581225 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/overwrite-named-arg.js 100000
+		 60.667264 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/overwrite-named-arg.js 100000
+		 51.779028 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/overwrite-named-arg.js 100000
+		 61.469878 ms
+./tests/pass-arguments-to-call.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/pass-arguments-to-call.js 100000
+		 203.296157 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/pass-arguments-to-call.js 100000
+		 128.428087 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/pass-arguments-to-call.js 100000
+		 134.375472 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/pass-arguments-to-call.js 100000
+		 116.910985 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/pass-arguments-to-call.js 100000
+		 300.967138 ms
+./tests/promises.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/promises.js 100000
+		 460.696307 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/promises.js 100000
+		 319.984926 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/promises.js 100000
+		 382.339905 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/promises.js 100000
+		 128.590032 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/promises.js 100000
+		 1723.034122 ms
+./tests/rest-parameters.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/rest-parameters.js 100000
+		 58.315826 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/rest-parameters.js 100000
+		 62.979185 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/rest-parameters.js 100000
+		 61.903348 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/rest-parameters.js 100000
+		 54.970384 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/rest-parameters.js 100000
+		 71.916261 ms
+./tests/return-arguments.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/return-arguments.js 100000
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/return-arguments.js 100000
+		 208162.872721 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/return-arguments.js 100000
+		 216517.948209 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/return-arguments.js 100000
+		 87487.723334 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/return-arguments.js 100000
+		 535180.808278 ms
+./tests/switch-with-128-cases.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/switch-with-128-cases.js 100000
+		 59.980412 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/switch-with-128-cases.js 100000
+		 59.794783 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/switch-with-128-cases.js 100000
+		 68.165758 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/switch-with-128-cases.js 100000
+		 54.652582 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/switch-with-128-cases.js 100000
+		 65.604815 ms
+./tests/switch-with-over-128-cases.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/switch-with-over-128-cases.js 100000
+		 62.714254 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/switch-with-over-128-cases.js 100000
+		 62.443075 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/switch-with-over-128-cases.js 100000
+		 69.227489 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/switch-with-over-128-cases.js 100000
+		 55.835524 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/switch-with-over-128-cases.js 100000
+		 63.442527 ms
+./tests/try-catch-finally.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/try-catch-finally.js 100000
+		 59.034332 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/try-catch-finally.js 100000
+		 56.613268 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/try-catch-finally.js 100000
+		 61.644972 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/try-catch-finally.js 100000
+		 53.168699 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/try-catch-finally.js 100000
+		 73.265019 ms
+./tests/try-catch.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/try-catch.js 100000
+		 57.20687 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/try-catch.js 100000
+		 59.035526 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/try-catch.js 100000
+		 67.557661 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/try-catch.js 100000
+		 55.698439 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/try-catch.js 100000
+		 69.034423 ms
+./tests/try-finally.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/try-finally.js 100000
+		 56.339262 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/try-finally.js 100000
+		 59.172487 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/try-finally.js 100000
+		 68.211175 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/try-finally.js 100000
+		 56.656121 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/try-finally.js 100000
+		 69.128513 ms
+./tests/with.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/with.js 100000
+		 97.533415 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/with.js 100000
+		 90.406767 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/with.js 100000
+		 102.708683 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/with.js 100000
+		 125.598146 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/with.js 100000
+		 87.220925 ms
+./tests/yield.js
+	 v8_v6.10.1
+		 /home/vladimir/.nvm/versions/node/v6.10.1/bin/node ./tests/yield.js 100000
+		 17298.250833 ms
+	 v8_7.10.0
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node ./tests/yield.js 100000
+		 12137.943465 ms
+	 v8_7.10.0_ignition
+		 /home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition ./tests/yield.js 100000
+		 21724.746847 ms
+	 v8_v8.0.0-nightly201705029802d466cc
+		 /home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node ./tests/yield.js 100000
+		 2727.694399 ms
+	 chakra_v8.0.0-nightly201705037f33b4cbf3
+		 /home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node ./tests/yield.js 100000
+		 17511.271473 ms
