@@ -20,5 +20,6 @@
   },
   "homepage": "https://github.com/sqreen/node_engine_bench#readme",
   "dependencies": {
+    "mustache": "^2.3.0"
   }
 }

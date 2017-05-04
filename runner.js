@@ -6,6 +6,7 @@ module.exports.VERSION = {
     'v8_7.10.0': '/home/vladimir/.nvm/versions/node/v7.10.0/bin/node',
     'v8_7.10.0_ignition': '/home/vladimir/.nvm/versions/node/v7.10.0/bin/node --ignition',
     'v8_v8.0.0-nightly201705029802d466cc': '/home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node',
+    'v8_v8.0.0-nightly201705029802d466cc_ignition': '/home/vladimir/.nvs/nightly/8.0.0-nightly201705029802d466cc/x64/bin/node --ignition',
     'chakra_v8.0.0-nightly201705037f33b4cbf3': '/home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly201705037f33b4cbf3/x64/bin/node'
 };
 
