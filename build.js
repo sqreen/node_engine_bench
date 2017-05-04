@@ -71,7 +71,7 @@ const homepage = `<html>
                     versionList.forEach((vers) => {
 
                         if (typeof expe[vers] === 'string') {
-                            line.push(null);
+                            line.push(0);
                         }
                         else {
                             line.push(expe[vers]);
