@@ -1,4 +1,5 @@
 'use strict';
+const Fs = require('fs');
 const setNames = [10, 100, 1000, 10000, 100000];
 
 const data = {};
@@ -9,83 +10,66 @@ setNames.forEach((setName) => {
 
 const tests = Object.keys(data['10']);
 const versions = Object.keys(data['10'][tests[0]]);
+const state = { tests: {}, versions: {} };
+const page = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node.js performances</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <script src="https://code.getmdl.io/1.3.0/material.js"></script>
+    <script>
+        var data = ${JSON.stringify(data)};
+        var setNames = ${JSON.stringify(setNames)};
+    </script>
+</head>
+<body>
+<div class="mdl-grid" style="padding: 0">
+    <div class="mdl-cell mdl-cell--2-col" style="background-color: #F3F3F3; margin: 0; padding-left: 10px">
+        <h4>Select tests</h4>
+        <ul class="demo-list-item mdl-list" id="test_select">
+            ${tests.map((test, index) => {
+                
+                state.tests[test] = index === 0;                
+                const name = test.split('/').pop();                
+                return `<li class="mdl-list__item">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="check_test_${test}">
+                    <input type="checkbox" id="check_test_${test}" class="mdl-checkbox__input check_test" ${index === 0 ? 'checked' : ''} onchange="update()">
+                    <span class="mdl-checkbox__label">${name}</span>
+                </label>
+            </li>`;
+            }).join('\n')}
+        </ul>
+    </div>
+    <div class="mdl-cell mdl-cell--8-col" id="main">
+        ${setNames.map((setName) => {
+            
+            return `<div id="chart_${setName}" style="width: 100%; height: 500px;"></div>`
+        }).join('\n')}
+    </div>
+    <div class="mdl-cell mdl-cell--2-col" style="background-color: #F3F3F3; margin: 0; padding-left: 10px">
+        <h4>Select Node.js versions</h4>
+        <ul class="demo-list-item mdl-list">
+            ${versions.map((version) => {
 
-const homepage = `<html>
-    <head>
-        <title></title>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        
-    </head>
-    <body>
-        <form onchange="draw()">
-            <h1>change experiments</h1>
-             ${tests.map((test) => `<label><input type="checkbox" id="${test}">${test}</label>`).join('\n')}
-        </form>
-        <form onchange="draw()">
-            <h1>change versions</h1>
-             ${versions.map((version) => `<label><input type="checkbox" checked id="${version}">${version}</label>`).join('\n')}
-        </form>
-        ${setNames.map((set) => `<div id="chart_${set}" style="width: 2300px; height: 500px;"></div>`).join('\n')}
-    
-    
-    <script type="text/javascript">
-            google.charts.load('current', {'packages':['corechart']});
-            google.charts.setOnLoadCallback(draw);
-            var data = ${JSON.stringify(data)};
-            var toDraw = {
-                tests: { ${tests.map((test) => `'${test}': false`).join(',\n')} },
-                versions: { ${versions.map((ver) => `'${ver}': true`).join(',\n')} }
-            };
-        function updateDraw() {
-
-            Object.keys(toDraw)
-                .forEach((type) => {
-
-                    Object.keys(toDraw[type])
-                        .forEach((id) => {
-
-                            toDraw[type][id] = document.getElementById(id).checked;
-                        });
-                });
-        }
-        function draw() {
-            updateDraw();
-            var setList = [${setNames.join(',')}];
-            var versionList = Object.keys(toDraw.versions).filter((vers) => toDraw.versions[vers]);
-            var testList = Object.keys(toDraw.tests).filter((test) => toDraw.tests[test]);
-
-            setList.forEach((set) => {
-
-                var current_data = data[set];
-                var chart_data = [['test'].concat(versionList)];
-                testList.forEach((test) => {
-
-                    var line = [test];
-                    var expe = current_data[test];
-                    versionList.forEach((vers) => {
-
-                        if (typeof expe[vers] === 'string') {
-                            line.push(0);
-                        }
-                        else {
-                            line.push(expe[vers]);
-                        }
-                    });
-                    chart_data.push(line);
-                });
-                var g_data = google.visualization.arrayToDataTable(chart_data);
-                var options = {
-                    title : 'number of run: ' + set,
-                    vAxis: {title: 'time'},
-                    hAxis: {title: 'test'},
-                    seriesType: 'bars'
-                };
-                var chart = new google.visualization.ComboChart(document.getElementById('chart_' + set));
-                chart.draw(g_data, options);
-            });
-        }
-        </script>
-    </body>
+            state.versions[version] = true;
+            return `<li class="mdl-list__item">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="check_version_${version}">
+                    <input type="checkbox" id="check_version_${version}" class="mdl-checkbox__input check_version" checked onchange="update()">
+                    <span class="mdl-checkbox__label">${version}</span>
+                </label>
+            </li>`
+            }).join('\n')}
+            
+        </ul>
+    </div>
+</div>
+<script>var state = ${JSON.stringify(state)}</script>
+<script src="index.js"></script>
+</body>
 </html>`;
 
-console.log(homepage);
+Fs.writeFileSync('./public/index.html', page);

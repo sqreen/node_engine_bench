@@ -7,6 +7,7 @@ const VERSIONS = Object.keys(Runner.VERSION);
 
 const tests = Fs.readdirSync('./tests').map((x) => './' + Path.join('./tests', x));
 
+const filenames = [];
 for (let j = 1; j <= 5; ++j) {
 
     const max = Math.pow(10, j);
@@ -31,4 +32,7 @@ for (let j = 1; j <= 5; ++j) {
     }
 
     Fs.writeFileSync(`./result/result_${max}.json`, JSON.stringify(results));
+    filenames.push({ size: max, file: `./result_${max}.json` });
 }
+
+Fs.writeFileSync('./result/index.js', `module.exports = { ${ filenames.map((item) => '\'' + item.size + '\'' + ': require(\'' + item.file + '\')').join(',\n') } }`);

@@ -2,13 +2,13 @@
 const CP = require('child_process');
 
 module.exports.VERSION = {
-    'v8_6.10.1': '/home/vladimir/.nvm/versions/node/v6.10.1/bin/node',
-    'v8_7.10.0': '/home/vladimir/.nvm/versions/node/v7.10.0/bin/node',
-    'v8_7.10.0_turbo_ignition': '/home/vladimir/.nvm/versions/node/v7.10.0/bin/node --turbo --ignition',
-    'v8_v8.0.0-nightly201705043f48ab3042': '/home/vladimir/.nvs/nightly/8.0.0-nightly201705043f48ab3042/x64/bin/node',
-    'v8_v8.0.0-nightly201705043f48ab3042_turbo_ignition': '/home/vladimir/.nvs/nightly/8.0.0-nightly201705043f48ab3042/x64/bin/node --turbo --ignition',
-    'chakra_v8.0.0-nightly20170415265fc0bedc': '/home/vladimir/.nvs/chakracore/8.0.0-pre2/x64/bin/node',
-    'chakra_v8.0.0-nightly20170505fe44f54949': '/home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly20170505fe44f54949/x64/bin/node'
+    '6.10.1_v8': '/home/vladimir/.nvm/versions/node/v6.10.1/bin/node',
+    '7.10.0_v8': '/home/vladimir/.nvm/versions/node/v7.10.0/bin/node',
+    '7.10.0_v8_turbo_ignition': '/home/vladimir/.nvm/versions/node/v7.10.0/bin/node --turbo --ignition',
+    '8.0.0-nightly201705043f48ab3042_v8': '/home/vladimir/.nvs/nightly/8.0.0-nightly201705043f48ab3042/x64/bin/node',
+    '8.0.0-nightly201705043f48ab3042_v8_turbo_ignition': '/home/vladimir/.nvs/nightly/8.0.0-nightly201705043f48ab3042/x64/bin/node --turbo --ignition',
+    '8.0.0-nightly20170415265fc0bedc_chakra': '/home/vladimir/.nvs/chakracore/8.0.0-pre2/x64/bin/node',
+    '8.0.0-nightly20170505fe44f54949_chakra': '/home/vladimir/.nvs/chakracore-nightly/8.0.0-nightly20170505fe44f54949/x64/bin/node'
 };
 
 module.exports.runWith = function (exec, file, cb) {
