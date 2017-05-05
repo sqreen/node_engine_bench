@@ -40,6 +40,10 @@ const page = `<!DOCTYPE html>
                     <input type="checkbox" id="check_test_${test}" class="mdl-checkbox__input check_test" ${index === 0 ? 'checked' : ''} onchange="update()">
                     <span class="mdl-checkbox__label">${name}</span>
                 </label>
+                <a href="https://github.com/sqreen/node_engine_bench/blob/master/tests/${name}" target="_blank" style="color: #BDBDBD;">
+                    <i class="material-icons" id="open_${name}">open_in_new</i>
+                    <div class="mdl-tooltip" for="open_${name}">See source</div>
+                </a>
             </li>`;
             }).join('\n')}
         </ul>
