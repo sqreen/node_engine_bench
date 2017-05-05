@@ -17,11 +17,6 @@ const homepage = `<html>
         
     </head>
     <body>
-        <form onchange="draw()" hidden>
-            <h1>change sets</h1>
-            ${setNames.map((set) => `<label><input type="checkbox" checked id="${set}">${set}</label>`).join('\n')}
-                        
-        </form>
         <form onchange="draw()">
             <h1>change experiments</h1>
              ${tests.map((test) => `<label><input type="checkbox" id="${test}">${test}</label>`).join('\n')}
@@ -38,7 +33,6 @@ const homepage = `<html>
             google.charts.setOnLoadCallback(draw);
             var data = ${JSON.stringify(data)};
             var toDraw = {
-                sets: { ${setNames.map((set) => `'${set}': true`).join(',\n')} },
                 tests: { ${tests.map((test) => `'${test}': false`).join(',\n')} },
                 versions: { ${versions.map((ver) => `'${ver}': true`).join(',\n')} }
             };
@@ -56,7 +50,7 @@ const homepage = `<html>
         }
         function draw() {
             updateDraw();
-            var setList = Object.keys(toDraw.sets).filter((set) => toDraw.sets[set]);
+            var setList = [${setNames.join(',')}];
             var versionList = Object.keys(toDraw.versions).filter((vers) => toDraw.versions[vers]);
             var testList = Object.keys(toDraw.tests).filter((test) => toDraw.tests[test]);
 
