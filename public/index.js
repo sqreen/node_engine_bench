@@ -3,7 +3,7 @@ google.charts.load('current', {'packages':['corechart']});
 
 if (window.location.search) {
     try {
-        var usable = decodeURI(window.location.search);
+        var usable = atob(decodeURI(window.location.search).split('?q=').pop());
         var todo = JSON.parse(usable.slice(usable.indexOf('{'), usable.lastIndexOf('}') + 1));
         if (todo.tests) {
             Object.keys(state.tests).forEach(function (test) {
@@ -25,7 +25,7 @@ google.charts.setOnLoadCallback(update);
 
 function updateURL(item) {
 
-    history.replaceState(null,null, window.location.origin + window.location.pathname + '?q=' + JSON.stringify(item));
+    history.replaceState(null,null, window.location.origin + window.location.pathname + '?q=' + btoa(JSON.stringify(item)));
 }
 
 function updateState() {
