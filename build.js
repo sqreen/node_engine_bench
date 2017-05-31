@@ -76,4 +76,4 @@ const page = `<!DOCTYPE html>
 </body>
 </html>`;
 
-Fs.writeFileSync('./public/index.html', page);
+Fs.writeFileSync('./docs/index.html', page);
