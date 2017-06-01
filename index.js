@@ -1,38 +1,84 @@
 'use strict';
-const Fs = require('fs');
-const Path = require('path');
-const Runner = require('./runner');
+google.charts.load('current', {'packages':['corechart']});
 
-const VERSIONS = Object.keys(Runner.VERSION);
+if (window.location.search) {
+    try {
+        var usable = atob(decodeURI(window.location.search).split('?q=').pop());
+        var todo = JSON.parse(usable.slice(usable.indexOf('{'), usable.lastIndexOf('}') + 1));
+        if (todo.tests) {
+            Object.keys(state.tests).forEach(function (test) {
 
-const tests = Fs.readdirSync('./tests').map((x) => './' + Path.join('./tests', x));
+                document.getElementById('check_test_' + test).checked = todo.tests.indexOf(test) > -1;
+            });
+        }
+        if (todo.versions) {
 
-const filenames = [];
-for (let j = 1; j <= 5; ++j) {
+            Object.keys(state.versions).forEach(function (version) {
 
-    const max = Math.pow(10, j);
-    const results = {};
-    console.log();
-    console.log();
-    console.log({max});
-    console.log();
-    console.log();
-    for (let file of tests) {
-        console.log(file);
-        results[file] = {};
-        for (let version of VERSIONS) {
-            console.log('\t', version);
-            try {
-                results[file][version] = Runner.timeRun(Runner.VERSION[version], file, max);
-            }
-            catch (e) {
-                results[file][version] = e.message;
-            }
+                document.getElementById('check_version_' + version).checked = todo.versions.indexOf(version) > -1;
+            });
         }
     }
+    catch (_) {}
+}
+google.charts.setOnLoadCallback(update);
 
-    Fs.writeFileSync(`./result/result_${max}.json`, JSON.stringify(results));
-    filenames.push({ size: max, file: `./result_${max}.json` });
+function updateURL(item) {
+
+    history.replaceState(null,null, window.location.origin + window.location.pathname + '?q=' + btoa(JSON.stringify(item)));
 }
 
-Fs.writeFileSync('./result/index.js', `module.exports = { ${ filenames.map((item) => '\'' + item.size + '\'' + ': require(\'' + item.file + '\')').join(',\n') } }`);
+function updateState() {
+
+    var item = { tests: [], versions: [] };
+    Object.keys(state.tests).forEach(function (test) {
+
+        state.tests[test] = document.getElementById('check_test_' + test).checked;
+        if (state.tests[test]) {
+            item.tests.push(test);
+        }
+    });
+
+    Object.keys(state.versions).forEach(function (version) {
+
+        state.versions[version] = document.getElementById('check_version_' + version).checked;
+        if (state.versions[version]) {
+            item.versions.push(version);
+        }
+    });
+    updateURL(item);
+}
+
+function update() {
+
+    updateState();
+
+    const tests = Object.keys(state.tests).filter((name) => state.tests[name]);
+    const versions = Object.keys(state.versions).filter((name) => state.versions[name]);
+
+    setNames.forEach(function(set) {
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_' + set));
+        var options = {
+            title : 'number of run: ' + set,
+            vAxis: {title: 'time'},
+            hAxis: {title: 'test'},
+            seriesType: 'bars'
+        };
+
+        var rawData = [];
+        rawData.push(['test'].concat(versions));
+
+        tests.forEach(function(test) {
+
+            var line = [test];
+            versions.forEach(function(version) {
+
+                var value = data[set][test][version];
+                line.push(typeof value === 'string' ? 0 : value);
+            });
+            rawData.push(line);
+        });
+        chart.draw(google.visualization.arrayToDataTable(rawData), options);
+    });
+}
