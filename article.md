@@ -22,6 +22,15 @@ The results of this benchmark are available through a small visualization tool <
 
 ## Context
 
+Even if V8 will stay the default JavaScript engine of Node.js, there is a willing to make the platform engine agnostic and
+to let the choice of the JavaScript engine to the developers or ops teams.
+
+
+
+The release of Node.js 8 is extremely exciting anf has been a huge event within the community. A brande new set of features 
+<TODO link here> have been shipped with the platform. Also performances consideration are been closely looked at by the developers
+from everywhere.
+
 ## Methodology
 
 ## Results
