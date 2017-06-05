@@ -55,6 +55,9 @@ of Node.js will be shipped with V8 5.9 (and possibly 5.6) with Ignition + Turbof
 
 ## conclusion
 
+If you are concerned by the security of your Node.js applications, you can take a look at [Sqreen](https://sqreen.io) which
+revolutionizes the way engineering teams protect apps from intrusions & data loss.
+
 This benchmark was incredibly fun to run, and I will plan to keep it updated in the future with newer versions of Node.js and
 more code patterns. As Sqreen Node.js engineer, I am extremely concerned about performances. The agent We have build has the smallest 
 performance impact possible over our client's application. Knowing what code patterns are the fastest is a critical part of my job.
@@ -68,5 +71,4 @@ In the end, the Node.js ecosystem will become more and more diverse.
 I hope you enjoyed this article. Do not hesitate to share it around and to read my other articles on 
 [Sqreen's blog](https://blog.sqreen.io/author/vladimir/). I also would love to have your feedback and comments here.
 
-If you are concerned by the security of your Node.js applications, you can take a look at [Sqreen](https://sqreen.io) which
-revolutionizes the way engineering teams protect apps from intrusions & data loss.
+
