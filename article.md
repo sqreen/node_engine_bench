@@ -9,7 +9,6 @@ Node.js is evolving right now. The recent Node.js v8 version (not to be mistaken
 As the future of Node.js stands in JavaScript engine agnosticism, one can legitimately wonder how the different engines 
 compete in term of performance.
 
-<!--TODO: links-->
 We performed a benchmark over a few versions of Node.js:
 * Node.js 6.10.1 (V8 5.1.281.95)
 * Node.js 7.10 (V8 5.5.372.43)
