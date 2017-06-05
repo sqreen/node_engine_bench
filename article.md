@@ -11,13 +11,12 @@ compete in term of performance.
 
 <!--TODO: links-->
 We performed a benchmark over a few versions of Node.js:
-* Node.js 6.10.1 (TODO: V8 version)
-* Node.js 7.10 (TODO: V8 version)
-* Node.js 7.10 with the `--turbo --ignition` flags (TODO: V8 version)
-* Node.js 8.0 (TODO: V8 version)
-* Node.js 8.0 with the `--turbo --ignition` flags (TODO: V8 version)
-* Node.js 8.0 (TODO: ChaKraCore version)
-* Node.js 8.0 (TODO: ChaKraCore version)
+* Node.js 6.10.1 (V8 5.1.281.95)
+* Node.js 7.10 (V8 5.5.372.43)
+* Node.js 7.10 with the `--turbo --ignition` flags (V8 5.5.372.43)
+* Node.js 8.0 (V8 5.8.283.41)
+* Node.js 8.0 with the `--turbo --ignition` flags (V8 5.8.283.41)
+* Node.js 8.0 (ChaKraCore 2.0.0.0) (Two different builds were used)
 
 The results of this benchmark are available through a small [visualization tool](https://sqreen.github.io/node_engine_bench).
 
