@@ -58,12 +58,9 @@ of Node.js will be shipped with V8 5.9 (and possibly 5.6) with Ignition + Turbof
 
 ## Conclusion
 
-If you are concerned by the security of your Node.js applications, you can take a look at [Sqreen](https://sqreen.io) which
+This benchmark was incredibly fun to run, and I will plan to keep it updated in the future with newer versions of Node.js and more code patterns. As Sqreen's Node.js engineer, I am extremely concerned about performance. The agent we have built has the least performance impact possible for our clients' applications. Knowing what code patterns are the fastest is a critical part of my job.
+If you are concerned by the security of your Node.js applications, you can take a look at [Sqreen](https://www.sqreen.io/?utm_medium=social&utm_source=blog&utm_campaign=Node.js%20engines%20performance%20benchmark) which
 revolutionizes the way engineering teams protect apps from intrusions & data loss.
-
-This benchmark was incredibly fun to run, and I will plan to keep it updated in the future with newer versions of Node.js and
-more code patterns. As Sqreen's Node.js engineer, I am extremely concerned about performance. The agent we have built has the least performance impact possible for our clients' applications.
- Knowing what code patterns are the fastest is a critical part of my job.
 
 The Turbofan + Ignition architecture seems to speed up Node.js 8 applications a lot. I recommend you try it with your own benchmarks.
 Let me know how that goes!
