@@ -40,7 +40,7 @@ These patterns have already been discussed in my [previous article](https://blog
 For each pattern, it has been run 10, 100, 1000, 10000 and 10000 times with each version of Node.js in the scope. This 
 has been done in order to see how each engine could optimize a stable and hot function at runtime.
 
-The benchmark did not take into account the number of garbage collection. This means that if the allocated memory given to
+The benchmark did not take into account the number of garbage collection events. This means that if the allocated memory given to
 each process were to be modified, the whole result of the experiment might be different.
 
 ## Results
