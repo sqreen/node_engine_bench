@@ -53,14 +53,14 @@ definitely provide a performance boost. Node.js 8 is shipped with
 [V8 5.8 which does not enable this by default](https://nodejs.org/en/blog/release/v8.0.0/#say-hello-to-v8-5-8). Future versions
 of Node.js will be shipped with V8 5.9 (and possibly 5.6) with Ignition + Turbofan enabled.
 
-## conclusion
+## Conclusion
 
 If you are concerned by the security of your Node.js applications, you can take a look at [Sqreen](https://sqreen.io) which
 revolutionizes the way engineering teams protect apps from intrusions & data loss.
 
 This benchmark was incredibly fun to run, and I will plan to keep it updated in the future with newer versions of Node.js and
-more code patterns. As Sqreen Node.js engineer, I am extremely concerned about performances. The agent We have build has the smallest 
-performance impact possible over our client's application. Knowing what code patterns are the fastest is a critical part of my job.
+more code patterns. As Sqreen's Node.js engineer, I am extremely concerned about performance. The agent we have built has the least performance impact possible for our clients' applications.
+ Knowing what code patterns are the fastest is a critical part of my job.
 
 Even if it shows that Node.js is more powerful with V8, this might change in the future as the ChakraCore team update its
 engine and as new versions of Node.js appear (I'm looking at you [SpiderNode](https://github.com/mozilla/spidernode)).
