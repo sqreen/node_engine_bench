@@ -56,7 +56,8 @@ of Node.js will be shipped with V8 5.9 (and possibly 5.6) with Ignition + Turbof
 ## conclusion
 
 This benchmark was incredibly fun to run, and I will plan to keep it updated in the future with newer versions of Node.js and
-more code patterns. 
+more code patterns. As Sqreen Node.js engineer, I am extremely concerned about performances. The agent We have build has the smallest 
+performance impact possible over our client's application. Knowing what code patterns are the fastest is a critical part of my job.
 
 Even if it shows that Node.js is more powerful with V8, this might change in the future as the ChakraCore team update its
 engine and as new versions of Node.js appear (I'm looking at you [SpiderNode](https://github.com/mozilla/spidernode)).
