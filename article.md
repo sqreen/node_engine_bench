@@ -17,8 +17,12 @@ We performed a benchmark over a few versions of Node.js:
 * Node.js 8.0 (TODO: V8 version)
 * Node.js 8.0 with the `--turbo --ignition` flags (TODO: V8 version)
 * Node.js 8.0 (TODO: ChaKraCore version)
+* Node.js 8.0 (TODO: ChaKraCore version)
 
 The results of this benchmark are available through a small [visualization tool](https://sqreen.github.io/node_engine_bench).
+
+According to these results, if you are using Node.js 8, you really might want to try to run your applications with the
+`--turbo --ignition` flags to see a performance boost.
 
 ## Context
 
@@ -61,6 +65,9 @@ revolutionizes the way engineering teams protect apps from intrusions & data los
 This benchmark was incredibly fun to run, and I will plan to keep it updated in the future with newer versions of Node.js and
 more code patterns. As Sqreen's Node.js engineer, I am extremely concerned about performance. The agent we have built has the least performance impact possible for our clients' applications.
  Knowing what code patterns are the fastest is a critical part of my job.
+
+The Turbofan + Ignition architecture seems to speed up Node.js 8 applications a lot. I recommend you try it with your own benchmarks.
+Let me know how that goes!
 
 Even if it shows that Node.js is more powerful with V8, this might change in the future as the ChakraCore team update its
 engine and as new versions of Node.js appear (I'm looking at you [SpiderNode](https://github.com/mozilla/spidernode)).
