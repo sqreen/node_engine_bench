@@ -1,0 +1,60 @@
+.node-versions .mdl-checkbox__label {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+.mdl-grid {
+  padding: 0;
+}
+
+.mdl-cell {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.mdl-cell--8-col {
+  margin: 0 24px;
+}
+
+.mdl-cell--2-col {
+  z-index: 2000;
+}
+
+.mdl-list__item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.by-sqreen {
+  margin: 20px 0;
+}
+
+.tests {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.by-sqreen span {
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  color: rgba(51,51,51,0.4);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.by-sqreen a {
+  display: inline-block;
+  vertical-align: middle;
+}
