@@ -60,7 +60,7 @@ function update() {
 
         var chart = new google.visualization.ComboChart(document.getElementById('chart_' + set));
         var options = {
-            title : 'number of run: ' + set,
+            title : 'number of runs: ' + set,
             vAxis: {title: 'time'},
             hAxis: {title: 'test'},
             seriesType: 'bars'
